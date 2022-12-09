@@ -1,0 +1,99 @@
+.section-work {
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+    }
+}
+
+.section-work__text {
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+.section-work__img {
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.section-work__about {
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
+.section-work__title {
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    }
+}
+.section-work__wrapper {
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        position: relative;
+    }
+}
+.section-work__overlay {
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        bottom: 0;
+        left: 0;
+    
+        background: var(--overlay-box)
+    }
+}
+
+.section-work__overlays {
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--before-color);
+    }
+}
