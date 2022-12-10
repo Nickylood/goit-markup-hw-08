@@ -63,6 +63,9 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--before-color);
   color: var(--title-text-color);
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .link {
@@ -672,7 +675,6 @@ img {
 }
 
 .hero-baner {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -2277,6 +2279,7 @@ textarea::placeholder {
             align-items: baseline;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2309,8 +2312,10 @@ textarea::placeholder {
   }
 }
 
-.section-footer__secondjoins {
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .section-footer__secondjoins {
+    padding-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .section-footer__secondjoins {
@@ -2490,7 +2495,11 @@ section-footer__go {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
-  margin-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .section-footer__application {
+    padding-bottom: 45px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .section-footer__application {

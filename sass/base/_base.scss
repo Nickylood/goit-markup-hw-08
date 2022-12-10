@@ -2,6 +2,9 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--before-color);
     color: var(--title-text-color); 
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .link {
     text-decoration: none;
