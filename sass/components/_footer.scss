@@ -278,11 +278,6 @@ section-footer__go {
     }
 }
 .last-footer__email {
-    @media screen and (max-width: 767px) {
-        display: flex;
-        padding-left: 16px;
-        width: 450px;
-    }
     padding-left: 16px;
     height: 50px;
     background: var(--h1-color);
@@ -290,11 +285,19 @@ section-footer__go {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     color:var(--before-color);
-
-    @media screen and (max-width: 1199px) {
+    
+    @media screen and (max-width: 767px) {
+        display: flex;
+        padding-left: 16px;
+        width: 80vw;
         margin-bottom: 20px;
-        width: 100%;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 20px;
+        width: 450px;
+    }
+    
 
     @media screen and (min-width: 1200px) {
         padding-left: 16px;
