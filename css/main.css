@@ -237,14 +237,14 @@ img {
 }
 @media screen and (min-width: 768px) {
   .header {
-    border-bottom: 1px solid var(--clients-icon);
+    border-bottom: 1px solid var(--border-bottom);
   }
 }
 @media screen and (min-width: 1200px) {
   .header {
     border-color: #ECECEC;
     background-color: var(--before-color);
-    border-bottom: 1px solid var(--clients-icon);
+    border-bottom: 1px solid var(--border-bottom);
   }
 }
 
@@ -590,6 +590,11 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .two__link {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (max-width: 767px) {
   .two__link {
     font-size: 24px;
@@ -756,7 +761,6 @@ img {
   z-index: var(--idx-backdrop);
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
   background-color: var(--modal-window);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
@@ -801,9 +805,6 @@ img {
 
 @media screen and (max-width: 1199px) {
   .modal-window {
-    width: 100vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
     position: absolute;
     padding: 40px;
     top: 50%;
@@ -819,8 +820,6 @@ img {
 @media screen and (min-width: 1200px) {
   .modal-window {
     width: 100vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
     position: absolute;
     padding: 40px;
     top: 50%;
@@ -937,6 +936,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .modal-window__label {
+    display: block;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
