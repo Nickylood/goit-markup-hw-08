@@ -100,10 +100,11 @@ img {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 0 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* outline: 1px solid tomato; */
 }
 @media screen and (min-width: 767px) {
@@ -2396,7 +2397,6 @@ textarea::placeholder {
 }
 
 .section-footer {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
