@@ -421,7 +421,7 @@ img {
   .nav__link::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     display: block;
     width: 100%;
@@ -639,6 +639,8 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -2270,6 +2272,11 @@ textarea::placeholder {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .divase {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) {
   .divase {
     display: -webkit-box;
@@ -2280,13 +2287,14 @@ textarea::placeholder {
             align-items: baseline;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .divase {
     margin-left: 0;
     gap: 70px;
+    padding-bottom: 0;
   }
 }
 
@@ -2315,7 +2323,7 @@ textarea::placeholder {
 
 @media screen and (max-width: 767px) {
   .section-footer__secondjoins {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2475,6 +2483,7 @@ section-footer__go {
 }
 @media screen and (min-width: 1200px) {
   .section-footer__ap {
+    text-align: left;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
@@ -2495,11 +2504,6 @@ section-footer__go {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
-}
-@media screen and (max-width: 767px) {
-  .section-footer__application {
-    padding-bottom: 45px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .section-footer__application {
@@ -2578,7 +2582,6 @@ section-footer__go {
 @media screen and (max-width: 767px) {
   .last-footer {
     display: block;
-    padding: 15px 16px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {

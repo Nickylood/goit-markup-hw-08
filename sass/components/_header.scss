@@ -196,7 +196,7 @@
         &::after {
         content: "";
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         display: block;
         width: 100%;
@@ -395,6 +395,7 @@
 .application {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
 
 }
